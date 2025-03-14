@@ -3,5 +3,5 @@ description: >-
   A website for XRAI Keele.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://xraikeele.github.io" # the base hostname & protocol for your site
-theme: minima
+theme: cayman
 markdown: kramdown
