@@ -3,4 +3,31 @@ layout: home
 title: Welcome
 ---
 
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <style>
+        .banner {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <video id="logoVideo" class="banner" autoplay>
+            <source src="./xraikeele.github.io/horizontal-logo-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <script>
+        document.getElementById('logoVideo').addEventListener('ended', function() {
+            this.pause();
+            this.currentTime = this.duration;
+        }, false);
+    </script>
+</body>
+</html>
